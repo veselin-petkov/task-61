@@ -8,11 +8,6 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      .hot{
-        content:url(images/flame.png);
-      }
-    </style>
   </head>
   <body>
     <div class="main">
@@ -94,5 +89,14 @@
         </div>
       </div>
     </div>
+    <script>
+        var x = document.querySelectorAll(".hot");
+
+        for (let index = 0; index < x.length; index++) {
+
+          x[index].innerHTML += "🔥";
+        }
+
+    </script>
   </body>
 </html>
